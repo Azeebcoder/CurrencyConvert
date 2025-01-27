@@ -1,0 +1,106 @@
+/* Component.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: start;
+  justify-content: center;
+
+}
+
+
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+}
+.inputbox{
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+.inputContainer{
+  width: 70%;
+}
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.selectContainer{
+  width: 30%;
+  display: flex;
+}
+.selectContainer img{
+  width: 30%;
+  padding: 10px;
+}
+.select{
+  width: 70%;
+}
+
+
+.input[type="number"],
+.select {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: transparent;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.inputbox:focus-within {
+  border-color: #4a90e2;
+  background-color: #e8f0fe;
+}
+
+.input[type="number"]::placeholder,
+.select {
+  color: #888;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 40px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"%3E%3Cpath d="M7 9l3-3H4z"%3E%3C/path%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.select:focus {
+  outline: none;
+  background-image: none;
+}
+
+.inputbox:hover{
+  border-color: #007bff;
+}
+
+.input[type="number"]:disabled,
+.select:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px){
+  .container{
+    padding: 10px;
+    width: 100%;
+  }
+  .select{
+    padding-right: 0px;
+  }
+}
