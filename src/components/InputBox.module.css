@@ -100,6 +100,12 @@
     padding: 10px;
     width: 100%;
   }
+  .inputContainer{
+    width: 60%;
+  }
+  .selectContainer{
+    width: 40%;
+  }
   .select{
     padding-right: 0px;
   }
